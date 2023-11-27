@@ -9,6 +9,9 @@ import CTAButton from "../components/core/HomePage/Button"
 import CodeBlocks from '../components/core/HomePage/CodeBlocks'
 import TimelineSection from '../components/core/HomePage/Timeline'
 import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection'
+import InstructorSection from '../components/core/HomePage/InstructorSection'
+import Footer from '../components/common/Footer'
+import ReviewSlider from '../components/common/ReviewSlider'
 const Home = () => {
   return (
     <div>
@@ -169,6 +172,22 @@ const Home = () => {
           {/* Learning Language Section - Section 3 */}
           <LearningLanguageSection />
         </div>
+
+
+        {/* Section 3 */}
+      <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
+        {/* Become a instructor section */}
+        <InstructorSection />
+
+        {/* Reviws from Other Learner */}
+        <h1 className="text-center text-4xl font-semibold mt-8">
+          Reviews from other learners
+        </h1>
+        
+      </div>
+      <ReviewSlider />
+      {/* Footer */}
+      <Footer />
       </div>
 
 
