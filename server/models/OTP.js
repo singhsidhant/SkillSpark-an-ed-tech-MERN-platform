@@ -18,18 +18,14 @@ const OTPSchema = new mongoose.Schema({
 });
 
 // Define a function to send emails
-async function sendVerificationEmail(email, otp) {
+async function sendVerificationEmail(email, otp) {//we have to give parameter whom to send mail and otp
 	// Create a transporter to send emails
 
 	// Define the email options
 
 	// Send the email
 	try {
-		const mailResponse = await mailSender(
-			email,
-			"Verification Email",
-			emailTemplate(otp)
-		);
+		const mailResponse = await mailSender(email,"Verification Email",emailTemplate(otp));//I have made mailsender function which require these 3 parameters so i have passed it here
 		console.log("Email sent successfully: ", mailResponse.response);
 	} catch (error) {
 		console.log("Error occurred while sending email: ", error);
@@ -37,7 +33,7 @@ async function sendVerificationEmail(email, otp) {
 	}
 }
 
-// Define a post-save hook to send email after the document has been saved
+// Define a pre-save hook to send email after the document has been saved
 OTPSchema.pre("save", async function (next) {
 	console.log("New document saved to database");
 
