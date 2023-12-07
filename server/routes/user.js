@@ -1,13 +1,11 @@
 // Import the required modules
 const express = require("express")
 const router = express.Router()
-const User=require("../models/User")
 // Import the required controllers and middleware functions
 const {
   login,
   signup,
   sendotp,
-  changePassword,
 } = require("../controllers/Auth")
 
 
