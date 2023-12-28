@@ -4,12 +4,15 @@ const dotenv = require("dotenv");
 const database =require("./config/database");
 
 const userRoutes = require("./routes/user");
+const profileRoutes = require("./routes/profile");
+const courseRoutes = require("./routes/Course");
+const contactUsRoute = require("./routes/Contact");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 
 // Setting up port number
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 5000;
 
 // Loading environment variables from .env file
 dotenv.config();
@@ -30,6 +33,9 @@ app.use(
 
 // Setting up routes
 app.use("/api/v1/auth", userRoutes);
+app.use("/api/v1/profile", profileRoutes);
+app.use("/api/v1/course", courseRoutes);
+app.use("/api/v1/reach", contactUsRoute);
 // Testing the server
 app.get("/", (req, res) => {
 	return res.json({
