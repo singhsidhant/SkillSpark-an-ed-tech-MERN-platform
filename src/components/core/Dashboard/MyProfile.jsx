@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
 import { formattedDate } from "../../../utils/dateFormatter"
-import IconBtn from "../../Common/IconBtn"
+import IconBtn from "../../common/IconBtn"
 
 export default function MyProfile() {
   const { user } = useSelector((state) => state.profile)
@@ -15,7 +15,7 @@ export default function MyProfile() {
         My Profile
       </h1>
       <div className="flex items-center justify-between rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-8 px-12">
-        <div className="flex items-center gap-x-4">
+        <div className="flex flex-col items-start lg:flex-row lg:items-center gap-x-4">
           <img
             src={user?.image}
             alt={`profile-${user?.firstName}`}

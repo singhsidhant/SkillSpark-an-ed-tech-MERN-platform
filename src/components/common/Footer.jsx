@@ -3,7 +3,7 @@ import { FooterLink2 } from "../../data/footer-links";
 import { Link } from "react-router-dom";
 
 // Images
-import Logo from "../../assets/Logo/Logo-Full-Light.png";
+import Logo from "../../assets/Logo/Sidhant.png";
 
 // Icons
 import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -172,7 +172,7 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center">Made with ❤️ Sidhant © 2023 LMS Sysytem</div>
+          <div className="text-center">Made with ❤️ by Sidhant © 2023 SkillSpark</div>
         </div>
       </div>
     </div>
