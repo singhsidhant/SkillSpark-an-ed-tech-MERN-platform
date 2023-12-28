@@ -2,9 +2,9 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
-import { fetchInstructorCourses } from "../../../services/operations/courseDetailsAPI"
-import { getInstructorData } from "../../../services/operations/profileAPI"
-import InstructorChart from "./InstructorDashboard/InstructorChart"
+import { fetchInstructorCourses } from "../../../../services/operations/courseDetailsAPI"
+import { getInstructorData } from "../../../../services/operations/profileAPI"
+import InstructorChart from ".././InstructorDashboard/InstructorChart"
 
 export default function Instructor() {
   const { token } = useSelector((state) => state.auth)
@@ -110,7 +110,7 @@ export default function Instructor() {
                     </p>
                     <div className="mt-1 flex items-center space-x-2">
                       <p className="text-xs font-medium text-richblack-300">
-                        {course.studentsEnroled.length} students
+                        {course.studentsEnrolled.length} students
                       </p>
                       <p className="text-xs font-medium text-richblack-300">
                         |
