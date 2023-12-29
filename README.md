@@ -39,19 +39,8 @@ timeline and priority for implementing these enhancements.
 
 [Live Demo](https://singh-sidhant-edtech-plateform.vercel.app) Go and watch.
 
-## Installation
 
-Describe the installation process for your project. Include any prerequisites, dependencies, or setup steps. Be clear and concise.
-
-```bash
-# Clone the repository
-git clone https://github.com/singhsidhant/LearningManagementSystem.git
-
-# Change into the project directory
-cd client
-
-# Install dependencies
-npm install in both server and client
+# Usage
 Usage
 For Students:
 − Homepage: This page will have a brief introduction to the platform, as well as links
@@ -75,7 +64,26 @@ including the number of views, clicks, and other relevant metrics.
 and delete courses, as well as manage the course content and pricing.
 − View and Edit Profile Details: These pages will allow the instructor to view and edit
 their account details.
+
+
+## Installation
+
+Describe the installation process for your project. Include any prerequisites, dependencies, or setup steps. Be clear and concise.
+
+```bash
+# Clone the repository
+git clone https://github.com/singhsidhant/LearningManagementSystem.git
+
+# Change into the project directory
+cd client
+
+# Install dependencies
+npm install in both server and client
+
 bash
 Copy code
 # Run the project
 npm start
+
+
+
